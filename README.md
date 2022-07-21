@@ -1,1 +1,1 @@
-# This application pomodoro 
+# This is application pomodoro 
