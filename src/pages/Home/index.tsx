@@ -7,8 +7,9 @@ import { FormTimer } from "./components/FormContainer";
 
 const CycleValitation = zod.object({
   task: zod.string().min(1, { message: "Por favor preencha o campo" }),
-  timer: zod.number(),
-  // .min(1, { message: "O tempo precisa ser de no mínimo 5 minutos" }),
+  timer: zod
+    .number()
+    .min(1, { message: "O tempo precisa ser de no mínimo 5 minutos" }),
 });
 
 type FormCycle = zod.infer<typeof CycleValitation>;
