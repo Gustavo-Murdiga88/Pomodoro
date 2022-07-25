@@ -39,11 +39,16 @@ module.exports = {
     "jsx-a11y/aria-unsupported-elements": "warn",
     "jsx-a11y/role-has-required-aria-props": "warn",
     "jsx-a11y/role-supports-aria-props": "warn",
-    "no-unused-vars": "warn",
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/control-has-associated-label": "off",
     "react/jsx-props-no-spreading": "off",
     "no-debugger": "off",
+    "react/jsx-no-bind": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "no-nested-ternary": "off",
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+    "no-param-reassign": ["warn", { props: false }],
   },
   settings: {
     "import/parsers": {
