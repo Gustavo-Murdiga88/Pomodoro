@@ -66,7 +66,7 @@ export function FormTimer() {
         <InputMinutesPerTask
           type="number"
           placeholder="00"
-          step={0.1}
+          step={1}
           min={0}
           max={60}
           disabled={!!activeCyCleId}
