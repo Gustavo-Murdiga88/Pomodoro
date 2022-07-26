@@ -13,4 +13,12 @@ export const LayoutContainer = styled.div`
 
   border-radius: 8px;
   background-color: ${({ theme }) => theme["gray-800"]};
+
+  @media (max-width: 700px) {
+    height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 0px;
+  }
 `;

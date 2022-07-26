@@ -45,7 +45,10 @@ export function CyclesContextProvider({ children }: CyclesProviderProps) {
       if (storedCyclesAsJson) {
         return JSON.parse(storedCyclesAsJson);
       }
-      return {};
+      return {
+        activeCyCleId: null,
+        Cycles: [{}],
+      };
     },
   );
 

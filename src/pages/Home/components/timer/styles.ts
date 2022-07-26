@@ -14,6 +14,13 @@ export const Timer = styled.div`
   color: ${(props) => props.theme["gray-100"]};
   font-weight: bold;
 
+  & div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
   & span {
     align-items: center;
     border-radius: 8px;
@@ -22,8 +29,19 @@ export const Timer = styled.div`
 
     background-color: ${(props) => props.theme["gray-700"]};
   }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    font-size: 6rem;
+    line-height: 4rem;
+    gap: 0.3rem;
+  }
 `;
 
 export const TimerSeparator = styled.div`
   color: ${(props) => props.theme["green-500"]};
+
+  @media (max-width: 700px) {
+    transform: rotate(90deg);
+  }
 `;

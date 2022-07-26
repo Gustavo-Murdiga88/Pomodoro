@@ -7,6 +7,11 @@ export const FormContainer = styled.form`
   align-items: center;
   gap: 3.5rem;
   margin-top: 1rem;
+
+  @media (max-width: 700px) {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -20,6 +25,14 @@ export const InputContainer = styled.div`
   line-height: 1.6;
   font-size: 1rem;
   font-weight: bold;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    gap: 0.7rem;
+  }
 `;
 
 const Stabardinput = styled.input`
@@ -50,6 +63,11 @@ export const InputTask = styled(Stabardinput)`
 export const InputMinutesPerTask = styled(Stabardinput)`
   text-align: center;
   width: 3rem;
+
+  @media (max-width: 700px) {
+    flex: 1;
+    width: 100%;
+  }
 `;
 
 export const ButtonPattern = styled.button`

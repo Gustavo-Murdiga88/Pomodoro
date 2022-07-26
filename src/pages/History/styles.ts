@@ -5,6 +5,11 @@ export const HistoryContainer = styled.div`
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 700px) {
+    padding: 0rem;
+    padding-top: 2rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -20,6 +25,10 @@ export const TableContainer = styled.div`
   flex: 1;
   overflow: auto;
   max-height: calc(3.375rem * 9);
+
+  @media (max-width: 700px) {
+    max-height: 95%;
+  }
 `;
 
 export const Table = styled.table`
@@ -69,6 +78,14 @@ export const Table = styled.table`
   tr > th:first-child,
   td:first-child {
     width: 50%;
+  }
+
+  @media (max-width: 700px) {
+    min-width: 30rem;
+    tr > th:first-child,
+    td:first-child {
+      width: 30%;
+    }
   }
 `;
 
