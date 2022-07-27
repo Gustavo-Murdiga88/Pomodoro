@@ -4,7 +4,7 @@ import { CyclesContextProvider } from "./context/taskContext";
 
 import { defaultTheme } from "./styles/themes/default";
 import { GlobalStyle } from "./styles/global";
-import { Router } from "./routes/index.routes";
+import { Router } from "./routes";
 
 function App() {
   return (
