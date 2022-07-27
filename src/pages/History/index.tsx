@@ -17,12 +17,14 @@ export function History() {
       <Title>Meu histórico</Title>
       <TableContainer>
         <Table>
-          <tr>
-            <th> Tarefa </th>
-            <th> Duração </th>
-            <th> Início </th>
-            <th> Status</th>
-          </tr>
+          <thead>
+            <tr>
+              <th> Tarefa </th>
+              <th> Duração </th>
+              <th> Início </th>
+              <th> Status</th>
+            </tr>
+          </thead>
           <tbody>
             {cycles.map((cycle) => (
               <tr key={cycle.id}>
