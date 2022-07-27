@@ -35,7 +35,7 @@ export const InputContainer = styled.div`
   }
 `;
 
-const Stabardinput = styled.input`
+const patternInput = styled.input`
   border: 0;
   padding: 0 0 0 0.5rem;
   background-color: transparent;
@@ -51,16 +51,20 @@ const Stabardinput = styled.input`
     box-shadow: 0 0 0 0;
     border-bottom-color: ${(props) => props.theme["green-500"]};
   }
+
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 `;
 
-export const InputTask = styled(Stabardinput)`
+export const InputTask = styled(patternInput)`
   flex: 1;
 
   &::-webkit-calendar-picker-indicator {
     visibility: hidden;
   }
 `;
-export const InputMinutesPerTask = styled(Stabardinput)`
+export const InputMinutesPerTask = styled(patternInput)`
   text-align: center;
   width: 3rem;
 
