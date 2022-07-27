@@ -47,7 +47,7 @@ export function CyclesContextProvider({ children }: CyclesProviderProps) {
       }
       return {
         activeCyCleId: null,
-        Cycles: [{}],
+        Cycles: [],
       };
     },
   );
